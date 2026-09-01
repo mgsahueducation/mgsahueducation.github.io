@@ -1,161 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MG SAHU EDUCATION BLOG | Home</title>
+<title>MG SAHU EDUCATION BLOG | Home</title>
 
-  <meta name="description"
-        content="MG SAHU EDUCATION BLOG - Class 10 Mathematics, Science, LBA resources, quizzes, model question papers and educational resources.">
+<meta name="description"
+content="MG SAHU EDUCATION BLOG - Mathematics, Science, LBA, quizzes, model question papers and educational resources for students.">
 
-  <meta name="keywords"
-        content="MG SAHU EDUCATION BLOG, Class 10 Mathematics, Kannada Medium, Urdu Medium, English Medium, LBA, KSEAB, Quiz">
+<meta name="keywords"
+content="MG SAHU EDUCATION BLOG, Class 10 Mathematics, Urdu Medium, Kannada Medium, English Medium, LBA, KSEAB, Quiz">
 
-  <meta name="author" content="MG SAHU EDUCATION BLOG">
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+body{
+  font-family:Arial,"Noto Sans",sans-serif;
+  background:#f5f7fb;
+  color:#1f2937;
+  line-height:1.6;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
+header{
+  background:linear-gradient(135deg,#123c69,#2563eb);
+  color:white;
+  text-align:center;
+  padding:45px 18px 38px;
+}
 
-    header {
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
+header h1{
+  font-size:clamp(1.8rem,6vw,3rem);
+  margin-bottom:8px;
+}
 
-    header h1 {
-      font-size: 2.3rem;
-      margin-bottom: 8px;
-    }
+header p{
+  font-size:1.05rem;
+}
 
-    header p {
-      font-size: 1.05rem;
-      opacity: 0.95;
-    }
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:20px 15px 50px;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 25px 15px 50px;
-    }
+.intro{
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  margin:20px 0 30px;
+  text-align:center;
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
 
-    .welcome {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
+.intro h2{
+  color:#123c69;
+  margin-bottom:8px;
+}
 
-    .welcome h2 {
-      color: #1e3a8a;
-      margin-bottom: 10px;
-    }
+.section{
+  margin-top:35px;
+}
 
-    .section-title {
-      text-align: center;
-      margin: 35px 0 20px;
-      color: #1e3a8a;
-      font-size: 1.7rem;
-    }
+.section-title{
+  text-align:center;
+  color:#123c69;
+  font-size:1.65rem;
+  margin-bottom:18px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:18px;
+}
 
-    .card {
-      background: white;
-      border-radius: 15px;
-      padding: 22px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
+.card{
+  background:white;
+  border-radius:16px;
+  padding:21px;
+  box-shadow:0 4px 15px rgba(0,0,0,.07);
+  border:1px solid #e5e7eb;
+  transition:.2s;
+}
 
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    }
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 9px 22px rgba(0,0,0,.12);
+}
 
-    .card h3 {
-      margin-bottom: 8px;
-      color: #1d4ed8;
-    }
+.card h3{
+  color:#1d4ed8;
+  margin-bottom:8px;
+  font-size:1.12rem;
+}
 
-    .card p {
-      font-size: 0.95rem;
-      color: #4b5563;
-      margin-bottom: 15px;
-    }
+.card p{
+  color:#4b5563;
+  font-size:.94rem;
+  margin-bottom:15px;
+}
 
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      background: #2563eb;
-      color: white;
-      padding: 9px 15px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
+.btn{
+  display:inline-block;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  padding:9px 14px;
+  border-radius:8px;
+  font-weight:bold;
+  font-size:.88rem;
+  margin:3px 3px 0 0;
+}
 
-    .btn:hover {
-      background: #1e40af;
-    }
+.btn:hover{
+  background:#1e40af;
+}
 
-    .medium {
-      text-align: center;
-      margin-top: 25px;
-    }
+.repo{
+  background:#f8fafc;
+  border-left:4px solid #2563eb;
+  padding:13px;
+  margin:8px 0;
+  border-radius:8px;
+}
 
-    .medium a {
-      display: inline-block;
-      margin: 6px;
-      padding: 10px 16px;
-      border-radius: 25px;
-      background: white;
-      color: #1e3a8a;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    }
+.repo a{
+  color:#1d4ed8;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 30px;
-    }
+.search-box{
+  max-width:600px;
+  margin:0 auto 30px;
+}
 
-    footer p {
-      margin: 5px;
-    }
+.search-box input{
+  width:100%;
+  padding:14px 18px;
+  border:1px solid #d1d5db;
+  border-radius:30px;
+  font-size:1rem;
+  outline:none;
+}
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
+.search-box input:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
 
-      .section-title {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+.badges{
+  text-align:center;
+  margin-top:20px;
+}
+
+.badge{
+  display:inline-block;
+  background:white;
+  color:#123c69;
+  padding:9px 14px;
+  margin:5px;
+  border-radius:25px;
+  box-shadow:0 3px 10px rgba(0,0,0,.07);
+  font-weight:bold;
+}
+
+footer{
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+  margin-top:25px;
+}
+
+footer a{
+  color:#93c5fd;
+  text-decoration:none;
+}
+
+.hidden{
+  display:none;
+}
+
+@media(max-width:600px){
+  header{
+    padding:35px 15px;
+  }
+
+  .container{
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  .card{
+    padding:18px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -165,162 +211,399 @@
   <p>Learn • Practice • Solve • Succeed</p>
 </header>
 
-<div class="container">
+<main class="container">
 
-  <div class="welcome">
-    <h2>Welcome to MG SAHU EDUCATION BLOG</h2>
-    <p>
-      Educational resources, interactive quizzes, step-by-step solutions,
-      LBA materials and model question papers for students.
-    </p>
+<section class="intro">
+  <h2>Welcome to MG SAHU EDUCATION BLOG</h2>
+  <p>
+    Educational resources, interactive quizzes, LBA materials,
+    model question papers and step-by-step learning resources.
+  </p>
+
+  <div class="badges">
+    <span class="badge">📐 Mathematics</span>
+    <span class="badge">🧪 Science</span>
+    <span class="badge">🎯 LBA</span>
+    <span class="badge">🎮 Quizzes</span>
   </div>
+</section>
 
-  <!-- MATHEMATICS -->
-
-  <h2 class="section-title">📐 Mathematics</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>🇬🇧 English Medium</h3>
-      <p>Class 10 Mathematics resources and interactive learning materials.</p>
-      <a class="btn"
-         href="https://github.com/mgsahueducation"
-         target="_blank">
-        Explore
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>اردو Urdu Medium</h3>
-      <p>Class 10 Mathematics resources for Urdu Medium students.</p>
-      <a class="btn"
-         href="https://github.com/mgsahueducation"
-         target="_blank">
-        Explore
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>ಕನ್ನಡ Kannada Medium</h3>
-      <p>Class 10 Mathematics resources for Kannada Medium students.</p>
-      <a class="btn"
-         href="https://mgsahueducation.github.io/Mathematics-Kannada-Medium-/"
-         target="_blank">
-        Open Website
-      </a>
-    </div>
-
-  </div>
-
-  <!-- LBA -->
-
-  <h2 class="section-title">🎯 LBA Resources</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>📐 Mathematics LBA</h3>
-      <p>
-        Learning Based Assessment questions, practice materials
-        and solutions.
-      </p>
-
-      <a class="btn"
-         href="https://github.com/mgsahueducation"
-         target="_blank">
-        View Resources
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>📝 Model Question Papers</h3>
-      <p>
-        KSEAB model question papers and answer resources.
-      </p>
-
-      <a class="btn"
-         href="https://github.com/mgsahueducation"
-         target="_blank">
-        View Papers
-      </a>
-    </div>
-
-  </div>
-
-  <!-- SCIENCE -->
-
-  <h2 class="section-title">🧪 Science</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Class 8 Science</h3>
-      <p>
-        Science activities and learning resources,
-        including microorganisms.
-      </p>
-
-      <a class="btn"
-         href="https://github.com/mgsahueducation"
-         target="_blank">
-        Explore
-      </a>
-    </div>
-
-  </div>
-
-  <!-- QUIZZES -->
-
-  <h2 class="section-title">🎮 Interactive Quizzes</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>🎯 Mathematics Quizzes</h3>
-      <p>
-        Interactive MCQs with answers and learning support.
-      </p>
-
-      <a class="btn"
-         href="https://github.com/mgsahueducation"
-         target="_blank">
-        Explore Quizzes
-      </a>
-    </div>
-
-  </div>
-
-  <!-- MEDIUM -->
-
-  <h2 class="section-title">🌐 Choose Your Medium</h2>
-
-  <div class="medium">
-
-    <a href="https://github.com/mgsahueducation"
-       target="_blank">
-       🇬🇧 English Medium
-    </a>
-
-    <a href="https://github.com/mgsahueducation"
-       target="_blank">
-       اردو Urdu Medium
-    </a>
-
-    <a href="https://mgsahueducation.github.io/Mathematics-Kannada-Medium-/"
-       target="_blank">
-       ಕನ್ನಡ Kannada Medium
-    </a>
-
-  </div>
-
+<div class="search-box">
+  <input
+    type="search"
+    id="search"
+    placeholder="🔍 Search resources..."
+    onkeyup="searchResources()">
 </div>
 
+<!-- MATHEMATICS -->
+
+<section class="section">
+<h2 class="section-title">📐 Class 10 Mathematics</h2>
+
+<div class="grid">
+
+<div class="card searchable">
+<h3>🇬🇧 English Medium</h3>
+<p>Class 10 Mathematics resources, LBA materials and interactive quizzes.</p>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Quiz-class-10-Maths-em-Real-Numbers-">
+Real Numbers Quiz
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths.-EM-LBA-Arithmetic-progression-2m-questions-">
+Arithmetic Progression – 2 Mark LBA
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-EM-LBA-AP-Next-">
+Arithmetic Progression – LBA
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-EM-LBA-AP-MCQ-1">
+Arithmetic Progression – MCQ
+</a>
+</div>
+
+<a class="btn"
+href="https://github.com/mgsahueducation"
+target="_blank">
+View All
+</a>
+</div>
+
+
+<div class="card searchable">
+<h3>اردو Urdu Medium</h3>
+<p>کلاس دہم ریاضی کے اردو میڈیم تعلیمی وسائل۔</p>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Urdu-Maths-FA-2-Test">
+FA-2 Test
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Urdu-Maths-LBA-Arithmetic-progression-2m-questions-">
+Arithmetic Progression – 2 Marks
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Urdu-Maths-Arithmetic-progression-LB-UM-1-marks-questions-">
+Arithmetic Progression – 1 Mark
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Urdu-Maths-">
+Class 10 Urdu Mathematics
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Mathematics-Urdu-Medium-Arithmetic-Progression--MCQ-1">
+Arithmetic Progression – MCQ
+</a>
+</div>
+</div>
+
+
+<div class="card searchable">
+<h3>ಕನ್ನಡ Kannada Medium</h3>
+<p>10ನೇ ತರಗತಿ ಗಣಿತ – ಕನ್ನಡ ಮಾಧ್ಯಮ ಸಂಪನ್ಮೂಲಗಳು.</p>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Mathematics-Kannada-Medium-">
+Mathematics – Kannada Medium
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-KM-LBA-AP-3-MARKS-QUESTION-">
+Arithmetic Progression – 3 Marks
+</a>
+</div>
+
+<a class="btn"
+href="https://mgsahueducation.github.io/Mathematics-Kannada-Medium-/"
+target="_blank">
+🌐 Open Published Page
+</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- LBA -->
+
+<section class="section">
+<h2 class="section-title">🎯 LBA Mathematics</h2>
+
+<div class="grid">
+
+<div class="card searchable">
+<h3>📝 LBA – English Medium</h3>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths.-EM-LBA-Arithmetic-progression-2m-questions-">
+Arithmetic Progression – 2 Marks
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-EM-LBA-AP-Next-">
+Arithmetic Progression – LBA
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-EM-LBA-AP-MCQ-1">
+Arithmetic Progression – MCQ
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-Arithmetic-progression-LBA-2-marks-work-sheet-">
+Arithmetic Progression – Worksheet
+</a>
+</div>
+</div>
+
+
+<div class="card searchable">
+<h3>اردو LBA – Urdu Medium</h3>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Urdu-Maths-LBA-Arithmetic-progression-2m-questions-">
+Arithmetic Progression – 2 Marks
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Urdu-Maths-Arithmetic-progression-LB-UM-1-marks-questions-">
+Arithmetic Progression – 1 Mark
+</a>
+</div>
+</div>
+
+
+<div class="card searchable">
+<h3>ಕನ್ನಡ LBA – Kannada Medium</h3>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-10-Maths-KM-LBA-AP-3-MARKS-QUESTION-">
+Arithmetic Progression – 3 Marks
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- KSEAB -->
+
+<section class="section">
+<h2 class="section-title">📝 KSEAB Model Question Papers</h2>
+
+<div class="grid">
+
+<div class="card searchable">
+<h3>🇬🇧 English Medium</h3>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/KSEAB-CLASS-10-MATHS-EM-MQP-1-2026-27-answers-key">
+MQP 1 – Answers Key
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/KSEAB-CLASS-10-MATHS-EM-MQP-4-2026-27-answers-key">
+MQP 4 – Answers Key
+</a>
+</div>
+</div>
+
+
+<div class="card searchable">
+<h3>ಕನ್ನಡ Kannada Medium</h3>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/KSEAB-CLASS-10-MATHS-KM-MQP-1-2026-27-answers-key">
+MQP 1 – Answers Key
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/KSEAB-CLASS-10-MATHS-KM-MQP-1-2026-27-answers-key.">
+MQP 1 – Answers Key (Version 2)
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- SCIENCE -->
+
+<section class="section">
+<h2 class="section-title">🧪 Class 8 Science</h2>
+
+<div class="grid">
+
+<div class="card searchable">
+<h3>🦠 Microorganisms</h3>
+<p>Activity-based science learning resources.</p>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-8-science-em-microorganisms-activity-">
+Microorganisms Activity
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-8-science-em-microorganisms-activity-methods-of-food-preservation.">
+Methods of Food Preservation
+</a>
+</div>
+
+<div class="repo">
+<a href="https://github.com/mgsahueducation/Class-8-science-em-microorganisms-activity-on-biogas.">
+Activity on Biogas
+</a>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- FORMULA -->
+
+<section class="section">
+<h2 class="section-title">🔢 Mathematics Formulas</h2>
+
+<div class="grid">
+
+<div class="card searchable">
+<h3>Arithmetic Progression</h3>
+
+<p>
+Formula and learning resource for finding the nth term
+of an arithmetic progression.
+</p>
+
+<a class="btn"
+href="https://github.com/mgsahueducation/Arithmetic-progression-nth-term-formula-"
+target="_blank">
+Open Resource
+</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- QUIZZES -->
+
+<section class="section">
+<h2 class="section-title">🎮 Interactive Quizzes</h2>
+
+<div class="grid">
+
+<div class="card searchable">
+<h3>📐 Mathematics Quizzes</h3>
+
+<p>
+Interactive mathematics questions, MCQs and learning activities.
+</p>
+
+<a class="btn"
+href="https://github.com/mgsahueducation/Quiz-class-10-Maths-em-Real-Numbers-"
+target="_blank">
+Real Numbers Quiz
+</a>
+
+<a class="btn"
+href="https://github.com/mgsahueducation/Class-10-Maths-EM-LBA-AP-MCQ-1"
+target="_blank">
+AP MCQ
+</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- ALL REPOSITORIES -->
+
+<section class="section">
+<h2 class="section-title">📚 All Projects</h2>
+
+<div class="intro">
+<p>
+Explore all educational projects and repositories of
+<strong>MG SAHU EDUCATION BLOG</strong>.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://github.com/mgsahueducation?tab=repositories"
+target="_blank">
+🔗 View All 20 Repositories
+</a>
+</div>
+</section>
+
+</main>
+
+
 <footer>
-  <p><strong>MG SAHU EDUCATION BLOG</strong></p>
-  <p>Learn • Practice • Solve • Succeed</p>
-  <p>© 2026 MG SAHU EDUCATION BLOG</p>
+<p><strong>📚 MG SAHU EDUCATION BLOG</strong></p>
+<p>Learn • Practice • Solve • Succeed</p>
+<p>
+<a href="https://github.com/mgsahueducation" target="_blank">
+GitHub Profile
+</a>
+</p>
+<p>© 2026 MG SAHU EDUCATION BLOG</p>
 </footer>
 
+
+<script>
+function searchResources(){
+
+  const input =
+    document.getElementById("search").value.toLowerCase();
+
+  const cards =
+    document.querySelectorAll(".searchable");
+
+  cards.forEach(function(card){
+
+    const text =
+      card.innerText.toLowerCase();
+
+    if(text.includes(input)){
+      card.classList.remove("hidden");
+    }else{
+      card.classList.add("hidden");
+    }
+
+  });
+
+}
+</script>
+
 </body>
-                                             </html>
+  </html>
