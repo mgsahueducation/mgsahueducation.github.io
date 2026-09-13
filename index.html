@@ -18,9 +18,6 @@ content="MG SAHU EDUCATION BLOG – Mathematics, Science, LBA, KSEAB model paper
 rel="stylesheet">
 
 <style>
-/* ==============================
-   RESET
-============================== */
 
 * {
     box-sizing: border-box;
@@ -39,9 +36,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==============================
-   HEADER
-============================== */
+/* HEADER */
 
 header {
     background: linear-gradient(135deg, #123c69, #2563eb);
@@ -60,9 +55,7 @@ header p {
     opacity: .95;
 }
 
-/* ==============================
-   NAVIGATION
-============================== */
+/* NAVIGATION */
 
 nav {
     position: sticky;
@@ -93,9 +86,7 @@ nav a:hover {
     color: #123c69;
 }
 
-/* ==============================
-   MAIN
-============================== */
+/* MAIN */
 
 .container {
     max-width: 1150px;
@@ -103,9 +94,7 @@ nav a:hover {
     padding: 22px 15px 55px;
 }
 
-/* ==============================
-   INTRO
-============================== */
+/* INTRO */
 
 .intro {
     background: white;
@@ -125,9 +114,7 @@ nav a:hover {
     color: #4b5563;
 }
 
-/* ==============================
-   SEARCH
-============================== */
+/* SEARCH */
 
 .search {
     margin: 22px auto 35px;
@@ -149,12 +136,11 @@ nav a:hover {
     box-shadow: 0 0 0 3px rgba(37,99,235,.12);
 }
 
-/* ==============================
-   SECTION
-============================== */
+/* SECTION */
 
 .section {
     margin-top: 38px;
+    scroll-margin-top: 70px;
 }
 
 .section-title {
@@ -165,9 +151,11 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* ==============================
-   PROJECT COUNT
-============================== */
+#lba {
+    scroll-margin-top: 70px;
+}
+
+/* PROJECT COUNT */
 
 .project-count {
     text-align: center;
@@ -180,9 +168,7 @@ nav a:hover {
     color: #2563eb;
 }
 
-/* ==============================
-   GRID
-============================== */
+/* GRID */
 
 .grid {
     display: grid;
@@ -190,9 +176,7 @@ nav a:hover {
     gap: 18px;
 }
 
-/* ==============================
-   CARD
-============================== */
+/* CARD */
 
 .card {
     background: white;
@@ -227,17 +211,17 @@ nav a:hover {
     margin-bottom: 14px;
 }
 
-/* ==============================
-   STATUS + BUTTON
-============================== */
+/* CARD ACTIONS */
 
 .card-actions {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 12px;
     margin-top: 12px;
 }
+
+/* STATUS */
 
 .status {
     display: inline-flex;
@@ -245,44 +229,18 @@ nav a:hover {
     gap: 6px;
     font-size: .82rem;
     font-weight: 700;
-    color: #6b7280;
+    color: #15803d;
 }
 
 .status-dot {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #f59e0b;
+    background: #16a34a;
     display: inline-block;
 }
 
-.status.live {
-    color: #15803d;
-}
-
-.status.live .status-dot {
-    background: #16a34a;
-}
-
-.status.offline {
-    color: #dc2626;
-}
-
-.status.offline .status-dot {
-    background: #dc2626;
-}
-
-.status.checking {
-    color: #b45309;
-}
-
-.status.checking .status-dot {
-    background: #f59e0b;
-}
-
-/* ==============================
-   OPEN BUTTON
-============================== */
+/* OPEN BUTTON */
 
 .btn {
     display: inline-block;
@@ -301,9 +259,7 @@ nav a:hover {
     background: #1e40af;
 }
 
-/* ==============================
-   LANGUAGE FONTS
-============================== */
+/* LANGUAGE FONTS */
 
 .urdu {
     font-family: "Noto Nastaliq Urdu", serif;
@@ -315,9 +271,7 @@ nav a:hover {
     font-family: "Noto Sans Kannada", sans-serif;
 }
 
-/* ==============================
-   ALL PROJECTS
-============================== */
+/* ALL PROJECTS */
 
 .all-projects {
     margin-top: 42px;
@@ -338,9 +292,7 @@ nav a:hover {
     margin-bottom: 18px;
 }
 
-/* ==============================
-   FOOTER
-============================== */
+/* FOOTER */
 
 footer {
     background: #111827;
@@ -359,17 +311,13 @@ footer a {
     text-decoration: none;
 }
 
-/* ==============================
-   SEARCH HIDDEN
-============================== */
+/* SEARCH HIDDEN */
 
 .hidden {
     display: none !important;
 }
 
-/* ==============================
-   MOBILE
-============================== */
+/* MOBILE */
 
 @media (max-width: 650px) {
 
@@ -407,32 +355,27 @@ footer a {
 
     .card-actions {
         flex-direction: row;
+        justify-content: flex-end;
     }
 
     .btn {
         padding: 8px 16px;
     }
 }
+
 </style>
 </head>
 
 <body>
-
-<!-- ==============================
-     HEADER
-============================== -->
 
 <header>
     <h1>📚 MG SAHU EDUCATION BLOG</h1>
     <p>Learn • Practice • Solve • Succeed</p>
 </header>
 
-<!-- ==============================
-     NAVIGATION
-============================== -->
-
 <nav>
     <div class="nav-inner">
+
         <a href="#home">🏠 Home</a>
         <a href="#mathematics">📐 Mathematics</a>
         <a href="#lba">🎯 LBA</a>
@@ -440,18 +383,11 @@ footer a {
         <a href="#science">🧪 Science</a>
         <a href="#formula">🔢 Formula</a>
         <a href="#all-projects">📚 All Projects</a>
+
     </div>
 </nav>
 
-<!-- ==============================
-     MAIN
-============================== -->
-
 <main class="container">
-
-<!-- ==============================
-     HOME
-============================== -->
 
 <section id="home" class="intro">
 
@@ -465,413 +401,270 @@ footer a {
 
 </section>
 
-<!-- ==============================
-     SEARCH
-============================== -->
-
 <div class="search">
+
     <input
         type="search"
         id="searchBox"
         placeholder="🔍 Search your educational resources..."
         oninput="searchResources()">
+
 </div>
 
 <div class="project-count">
-    📚 All <span id="visibleCount">21</span> GitHub Projects
+    📚 All <span id="visibleCount">24</span> GitHub Projects
 </div>
 
-<!-- ==================================================
-     MATHEMATICS
-================================================== -->
-
+<!-- LBA navigation anchor -->
+<div id="lba"></div>
 <section id="mathematics" class="section">
 
 <h2 class="section-title">📐 Class 10 Mathematics</h2>
 
 <div class="grid">
 
-<!-- 01 -->
-
 <div class="card searchable">
-
     <div class="card-category">📐 Mathematics • Quiz</div>
-
     <h3>🔢 Real Numbers – Quiz</h3>
-
-    <p>
-        Class 10 Mathematics – Real Numbers interactive quiz.
-    </p>
+    <p>Class 10 Mathematics – Real Numbers interactive quiz.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Quiz-class-10-Maths-em-Real-Numbers-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Quiz-class-10-Maths-em-Real-Numbers-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 02 -->
 
 <div class="card searchable">
-
     <div class="card-category">📐 Mathematics • LBA</div>
-
     <h3>🎯 Arithmetic Progression – MCQ</h3>
-
-    <p>
-        Class 10 Mathematics English Medium –
-        Arithmetic Progression MCQ.
-    </p>
+    <p>Class 10 Mathematics English Medium – Arithmetic Progression MCQ.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Maths-EM-LBA-AP-MCQ-1/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Maths-EM-LBA-AP-MCQ-1/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 03 -->
 
 <div class="card searchable">
-
     <div class="card-category">🎯 LBA</div>
-
     <h3>📚 Arithmetic Progression – LBA</h3>
-
-    <p>
-        Class 10 Mathematics English Medium LBA resource.
-    </p>
+    <p>Class 10 Mathematics English Medium LBA resource.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Maths-EM-LBA-AP-Next-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Maths-EM-LBA-AP-Next-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 04 -->
 
 <div class="card searchable">
-
     <div class="card-category">🎯 LBA • 2 Marks</div>
-
     <h3>📝 Arithmetic Progression – 2 Marks</h3>
-
-    <p>
-        Class 10 Mathematics English Medium
-        two-mark LBA questions.
-    </p>
+    <p>Class 10 Mathematics English Medium two-mark LBA questions.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Maths.-EM-LBA-Arithmetic-progression-2m-questions-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Maths.-EM-LBA-Arithmetic-progression-2m-questions-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 05 -->
 
 <div class="card searchable">
-
     <div class="card-category">🎯 LBA • Worksheet</div>
-
     <h3>📄 Arithmetic Progression – Worksheet</h3>
-
-    <p>
-        Class 10 Mathematics Arithmetic Progression worksheet.
-    </p>
+    <p>Class 10 Mathematics Arithmetic Progression worksheet.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Maths-Arithmetic-progression-LBA-2-marks-work-sheet-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Maths-Arithmetic-progression-LBA-2-marks-work-sheet-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 06 -->
 
 <div class="card searchable urdu">
-
     <div class="card-category">اردو • Mathematics</div>
-
     <h3>📐 Class 10 Urdu Mathematics</h3>
-
-    <p>
-        کلاس دہم ریاضی کے اردو میڈیم تعلیمی وسائل۔
-    </p>
+    <p>کلاس دہم ریاضی کے اردو میڈیم تعلیمی وسائل۔</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Urdu-Maths-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>دستیاب
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Urdu-Maths-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 07 -->
 
 <div class="card searchable urdu">
-
     <div class="card-category">اردو • Test</div>
-
     <h3>📝 FA-2 Test</h3>
-
-    <p>
-        کلاس دہم اردو میڈیم ریاضی FA-2 ٹیسٹ۔
-    </p>
+    <p>کلاس دہم اردو میڈیم ریاضی FA-2 ٹیسٹ۔</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Urdu-Maths-FA-2-Test/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>دستیاب
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Urdu-Maths-FA-2-Test/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 08 -->
 
 <div class="card searchable urdu">
-
     <div class="card-category">اردو • LBA</div>
-
     <h3>📚 حسابی تصاعد – 2 Marks</h3>
-
-    <p>
-        اردو میڈیم حسابی تصاعد کے دو نمبر کے سوالات۔
-    </p>
+    <p>اردو میڈیم حسابی تصاعد کے دو نمبر کے سوالات۔</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Urdu-Maths-LBA-Arithmetic-progression-2m-questions-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>دستیاب
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Urdu-Maths-LBA-Arithmetic-progression-2m-questions-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 09 -->
 
 <div class="card searchable urdu">
-
     <div class="card-category">اردو • LBA</div>
-
     <h3>📝 حسابی تصاعد – 1 Mark</h3>
-
-    <p>
-        اردو میڈیم حسابی تصاعد کے ایک نمبر کے سوالات۔
-    </p>
+    <p>اردو میڈیم حسابی تصاعد کے ایک نمبر کے سوالات۔</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Urdu-Maths-Arithmetic-progression-LB-UM-1-marks-questions-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>دستیاب
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Urdu-Maths-Arithmetic-progression-LB-UM-1-marks-questions-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 10 -->
 
 <div class="card searchable urdu">
-
     <div class="card-category">اردو • Quiz</div>
-
     <h3>🎯 حسابی تصاعد – MCQ</h3>
-
-    <p>
-        اردو میڈیم حسابی تصاعد کا MCQ کوئز۔
-    </p>
+    <p>اردو میڈیم حسابی تصاعد کا MCQ کوئز۔</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Mathematics-Urdu-Medium-Arithmetic-Progression--MCQ-1/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>دستیاب
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Mathematics-Urdu-Medium-Arithmetic-Progression--MCQ-1/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 11 -->
 
 <div class="card searchable kannada">
-
     <div class="card-category">ಕನ್ನಡ • Mathematics</div>
-
     <h3>📐 Mathematics – Kannada Medium</h3>
-
-    <p>
-        10ನೇ ತರಗತಿ ಗಣಿತ – ಕನ್ನಡ ಮಾಧ್ಯಮ ಸಂಪನ್ಮೂಲಗಳು.
-    </p>
+    <p>10ನೇ ತರಗತಿ ಗಣಿತ – ಕನ್ನಡ ಮಾಧ್ಯಮ ಸಂಪನ್ಮೂಲಗಳು.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Mathematics-Kannada-Medium-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>ಲಭ್ಯವಿದೆ
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Mathematics-Kannada-Medium-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 12 -->
 
 <div class="card searchable kannada">
-
     <div class="card-category">ಕನ್ನಡ • LBA</div>
-
     <h3>📝 Arithmetic Progression – 3 Marks</h3>
-
-    <p>
-        10ನೇ ತರಗತಿ ಗಣಿತ – Arithmetic Progression
-        ಮೂರು ಅಂಕಗಳ ಪ್ರಶ್ನೆಗಳು.
-    </p>
+    <p>10ನೇ ತರಗತಿ ಗಣಿತ – Arithmetic Progression ಮೂರು ಅಂಕಗಳ ಪ್ರಶ್ನೆಗಳು.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-10-Maths-KM-LBA-AP-3-MARKS-QUESTION-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>ಲಭ್ಯವಿದೆ
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-10-Maths-KM-LBA-AP-3-MARKS-QUESTION-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
 </div>
 </section>
 
-<!-- ==================================================
-     KSEAB
-================================================== -->
 
 <section id="kseab" class="section">
 
@@ -879,249 +672,156 @@ footer a {
 
 <div class="grid">
 
-<!-- 13 -->
 
 <div class="card searchable">
-
     <div class="card-category">📝 KSEAB • English</div>
-
     <h3>📄 MQP 1 – Answer Key</h3>
-
-    <p>
-        KSEAB Class 10 Mathematics English Medium
-        Model Question Paper 1.
-    </p>
+    <p>KSEAB Class 10 Mathematics English Medium Model Question Paper 1.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-EM-MQP-1-2026-27-answers-key/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-EM-MQP-1-2026-27-answers-key/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 14 -->
 
 <div class="card searchable">
-
     <div class="card-category">📝 KSEAB • English</div>
-
     <h3>📄 MQP 4 – Answer Key</h3>
-
-    <p>
-        KSEAB Class 10 Mathematics English Medium
-        Model Question Paper 4.
-    </p>
+    <p>KSEAB Class 10 Mathematics English Medium Model Question Paper 4.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-EM-MQP-4-2026-27-answers-key/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-EM-MQP-4-2026-27-answers-key/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 15 -->
 
 <div class="card searchable kannada">
-
     <div class="card-category">📝 KSEAB • ಕನ್ನಡ</div>
-
     <h3>📄 MQP 1 – Answer Key</h3>
-
-    <p>
-        KSEAB Class 10 Mathematics Kannada Medium
-        Model Question Paper 1.
-    </p>
+    <p>KSEAB Class 10 Mathematics Kannada Medium Model Question Paper 1.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-KM-MQP-1-2026-27-answers-key/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>ಲಭ್ಯವಿದೆ
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-KM-MQP-1-2026-27-answers-key/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 16 -->
 
 <div class="card searchable kannada">
-
     <div class="card-category">📝 KSEAB • ಕನ್ನಡ</div>
-
     <h3>📄 MQP 1 – Answer Key (Trailing Period Repository)</h3>
-
-    <p>
-        Separate GitHub repository whose repository name
-        ends with a period.
-    </p>
+    <p>Separate GitHub repository whose repository name ends with a period.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-KM-MQP-1-2026-27-answers-key./">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>ಲಭ್ಯವಿದೆ
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/KSEAB-CLASS-10-MATHS-KM-MQP-1-2026-27-answers-key./"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
 </div>
 </section>
-
-<!-- ==================================================
-     SCIENCE
-================================================== -->
-
 <section id="science" class="section">
 
 <h2 class="section-title">🧪 Class 8 Science</h2>
 
 <div class="grid">
 
-<!-- 17 -->
-
 <div class="card searchable">
-
     <div class="card-category">🧪 Science • Class 8</div>
-
     <h3>🧪 Microorganisms Activity</h3>
-
-    <p>
-        Activity-based Science learning resource
-        on microorganisms.
-    </p>
+    <p>Activity-based Science learning resource on microorganisms.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-8-science-em-microorganisms-activity-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-8-science-em-microorganisms-activity-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 18 -->
 
 <div class="card searchable">
-
     <div class="card-category">🧪 Science • Activity</div>
-
     <h3>🥫 Methods of Food Preservation</h3>
-
-    <p>
-        Class 8 Science activity on methods
-        of food preservation.
-    </p>
+    <p>Class 8 Science activity on methods of food preservation.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-8-science-em-microorganisms-activity-methods-of-food-preservation./">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-8-science-em-microorganisms-activity-methods-of-food-preservation./"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 19 -->
 
 <div class="card searchable">
-
     <div class="card-category">🧪 Science • Activity</div>
-
     <h3>🔥 Activity on Biogas</h3>
-
-    <p>
-        Class 8 Science activity explaining
-        biogas production.
-    </p>
+    <p>Class 8 Science activity explaining biogas production.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Class-8-science-em-microorganisms-activity-on-biogas./">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Class-8-science-em-microorganisms-activity-on-biogas./"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
 </div>
 </section>
 
-<!-- ==================================================
-     FORMULA
-================================================== -->
 
 <section id="formula" class="section">
 
@@ -1129,77 +829,121 @@ footer a {
 
 <div class="grid">
 
-<!-- 20 -->
 
 <div class="card searchable">
-
     <div class="card-category">🔢 Mathematics • Formula</div>
-
     <h3>🔢 Arithmetic Progression – nth Term Formula</h3>
-
-    <p>
-        Formula for finding the nth term
-        of an arithmetic progression.
-    </p>
+    <p>Formula for finding the nth term of an arithmetic progression.</p>
 
     <div class="card-actions">
-
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/Arithmetic-progression-nth-term-formula-/">
-            <span class="status-dot"></span>
-            Checking…
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/Arithmetic-progression-nth-term-formula-/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
 
-<!-- 21 -->
 
 <div class="card searchable">
-
-    <div class="card-category">🌐 Main Website</div>
-
-    <h3>📚 MG SAHU EDUCATION BLOG</h3>
-
+    <div class="card-category">📐 Coordinate Geometry • Interactive</div>
+    <h3>📍 Distance Formula – Interactive</h3>
     <p>
-        Main GitHub Pages repository and home page
-        of MG SAHU EDUCATION BLOG.
+        Interactive Coordinate Geometry tool for understanding
+        and calculating the distance between two points.
     </p>
 
     <div class="card-actions">
+        <span class="status">
+            <span class="status-dot"></span>Available
+        </span>
 
-        <span class="status checking"
-              data-url="https://mgsahueducation.github.io/">
-            <span class="status-dot"></span>
-            Checking…
+        <a class="btn"
+           href="https://mgsahueducation.github.io/Coordinate-geometry-distance-formula-interactive-/"
+           target="_blank"
+           rel="noopener noreferrer">
+           Open
+        </a>
+    </div>
+</div>
+
+
+<div class="card searchable">
+    <div class="card-category">📐 Coordinate Geometry • Interactive</div>
+    <h3>📈 Slope Formula – Interactive</h3>
+    <p>
+        Interactive Coordinate Geometry tool for learning
+        and calculating the slope between two points.
+    </p>
+
+    <div class="card-actions">
+        <span class="status">
+            <span class="status-dot"></span>Available
+        </span>
+
+        <a class="btn"
+           href="https://mgsahueducation.github.io/Coordinate-geometry-slope-formula-interactive-/"
+           target="_blank"
+           rel="noopener noreferrer">
+           Open
+        </a>
+    </div>
+</div>
+
+
+<div class="card searchable">
+    <div class="card-category">📐 Coordinate Geometry • Advanced</div>
+    <h3>📍 Distance Formula – Interactive Redefined</h3>
+    <p>
+        Advanced interactive version of the Coordinate Geometry
+        Distance Formula learning resource.
+    </p>
+
+    <div class="card-actions">
+        <span class="status">
+            <span class="status-dot"></span>Available
+        </span>
+
+        <a class="btn"
+           href="https://mgsahueducation.github.io/Coordinate-geometry-distance-formula-interactive-redefined/"
+           target="_blank"
+           rel="noopener noreferrer">
+           Open
+        </a>
+    </div>
+</div>
+
+
+<div class="card searchable">
+    <div class="card-category">🌐 Main Website</div>
+    <h3>📚 MG SAHU EDUCATION BLOG</h3>
+    <p>
+        Main GitHub Pages repository and home page of
+        MG SAHU EDUCATION BLOG.
+    </p>
+
+    <div class="card-actions">
+        <span class="status">
+            <span class="status-dot"></span>Available
         </span>
 
         <a class="btn"
            href="https://mgsahueducation.github.io/"
            target="_blank"
            rel="noopener noreferrer">
-            Open
+           Open
         </a>
-
     </div>
-
 </div>
+
 
 </div>
 </section>
-
-<!-- ==============================
-     ALL PROJECTS
-============================== -->
-
 <section id="all-projects" class="all-projects">
 
     <h2>📚 All Projects</h2>
@@ -1210,8 +954,8 @@ footer a {
     </p>
 
     <p>
-        <strong>21 GitHub Repositories</strong>
-        • Mathematics • Science • LBA • KSEAB
+        <strong>24 Featured GitHub Projects</strong>
+        • Mathematics • Science • LBA • KSEAB • Interactive Formula
     </p>
 
     <br>
@@ -1227,9 +971,6 @@ footer a {
 
 </main>
 
-<!-- ==============================
-     FOOTER
-============================== -->
 
 <footer>
 
@@ -1250,11 +991,8 @@ footer a {
 
 </footer>
 
-<script>
 
-/* ==========================================
-   SEARCH
-========================================== */
+<script>
 
 function searchResources() {
 
@@ -1293,82 +1031,15 @@ function searchResources() {
 }
 
 
-/* ==========================================
-   LIVE STATUS CHECK
-   ------------------------------------------
-   GitHub Pages normally blocks cross-origin
-   status checks in some browsers.
-
-   The script therefore:
-   1. Starts with "Checking…"
-   2. Attempts a lightweight request
-   3. Shows "Live" when reachable
-   4. Shows "Unavailable" when the request fails
-   5. Keeps the Open button usable regardless
-========================================== */
-
-async function checkStatus(statusElement) {
-
-    const url =
-        statusElement.getAttribute("data-url");
-
-    try {
-
-        const controller =
-            new AbortController();
-
-        const timeout =
-            setTimeout(function() {
-                controller.abort();
-            }, 7000);
-
-        await fetch(
-            url,
-            {
-                method: "GET",
-                mode: "no-cors",
-                cache: "no-store",
-                signal: controller.signal
-            }
-        );
-
-        clearTimeout(timeout);
-
-        statusElement.classList.remove("checking");
-        statusElement.classList.add("live");
-
-        statusElement.innerHTML =
-            '<span class="status-dot"></span> Live';
-
-    } catch (error) {
-
-        statusElement.classList.remove("checking");
-        statusElement.classList.add("offline");
-
-        statusElement.innerHTML =
-            '<span class="status-dot"></span> Unavailable';
-
-    }
-
-}
-
-
-/* ==========================================
-   CHECK ALL 21 PROJECTS
-========================================== */
-
 document.addEventListener(
     "DOMContentLoaded",
     function() {
 
-        const statuses =
-            document.querySelectorAll(
-                ".status[data-url]"
-            );
+        const cards =
+            document.querySelectorAll(".searchable");
 
-        statuses.forEach(function(status) {
-            checkStatus(status);
-        });
+        document.getElementById("visibleCount").textContent =
+            cards.length;
 
     }
 );
